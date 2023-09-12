@@ -21,7 +21,7 @@ contract Payment {
     *@param _amount The amount of eth deposited
      */
     function deposit(uint _amount) external payable{
-        require(msg.value == _amount, "invalid deposit amount");
+        require(msg.value == _amount, "Invalid deposit amount");
         //deposit to treasury
         (bool success, ) = address(wallet).call{value: msg.value}(""); 
         //record deposit
