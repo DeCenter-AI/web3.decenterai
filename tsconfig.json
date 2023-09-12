@@ -19,13 +19,7 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@/*": ["src/*"],
-      "@auth/*": ["src/auth/*"],
-      "@app/*": ["src/app/*"],
-      "@decorators/*": ["src/app/decorators/*"],
-      "@utils/*": ["utils/*"],
-      "@src/*": ["src/*"],
-      "@ai/*": ["src/ai/*"]
+      
     },
     "strict": true,
     "noUnusedLocals": false,
