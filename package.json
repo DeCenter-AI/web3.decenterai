@@ -3,6 +3,7 @@
 	"private": true,
 	"scripts": {
 		"node":"hardhat node",
+		"test":"hardhat test",
 		"clean": "hardhat clean",
 		"compile": "hardhat compile",
 		"sepolia": "hardhat run scripts/deploy.ts --network sepolia"
