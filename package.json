@@ -2,6 +2,7 @@
 	"name": "decenter-contracts",
 	"private": true,
 	"scripts": {
+		"node":"hardhat node",
 		"clean": "hardhat clean",
 		"compile": "hardhat compile",
 		"sepolia": "hardhat run scripts/deploy.ts --network sepolia"
