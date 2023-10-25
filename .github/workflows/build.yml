@@ -1,8 +1,16 @@
 name: build
 on:
-  - push
-  - pull_request
+  push:
+    branches:
 
+  pull_request:
+    branches:
+      - main
+
+  merge_group:
+    types: [checks_requested]
+
+  workflow_dispatch:
 env:
   envfile: ${{secrets.ENV}}
 
