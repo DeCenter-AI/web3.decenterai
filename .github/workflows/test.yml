@@ -1,4 +1,4 @@
-name: build
+name: test
 on:
   - push
   - pull_request
@@ -44,3 +44,14 @@ jobs:
       - name: Compile
         run: |
           npm run compile
+
+      - name: Test
+        run: |
+          npm run test
+
+      # - name: Test
+      #   uses: ambersun1234/hardhat-test-action@v1
+      #   with:
+      #     network: ${{env.network}}
+      #     private_key: ${{ env.PRIVATE_KEY }}
+      #     rpc_url: ${{ secrets.RPC_URL }}
