@@ -18,13 +18,15 @@ jobs:
         with:
           version: 8.6.6
 
-      - uses: actions/setup-node@v3
+      - name: Setup Node v19
+        uses: actions/setup-node@v3
         continue-on-error: true
         with:
           cache: "pnpm"
           node-version: 19.9.0
 
-      - uses: actions/setup-node@v3
+      - name: Setup node v20
+        uses: actions/setup-node@v3
         with:
           cache: "pnpm"
           node-version: 20
